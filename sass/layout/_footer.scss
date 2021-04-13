@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+
+footer {
+    background-color: map-get($map: $colors, $key: 'secondary');
+    padding: 60px;
+}
+
+.copyright {
+    color: #fff;
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+.nav-footer {
+    li { margin-block: 10px; }
+    a { color: #fff; }
+}
+
+.social-bar {
+    a {
+        margin-inline: 20px;
+        color: #fff;
+    }
+}

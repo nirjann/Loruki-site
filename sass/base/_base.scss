@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    @include set-font('primary', 'light');
+
+}
+
+h1,
+h2 {
+    line-height: 1.2;
+}
+
+a {
+    color: map-get($map: $colors, $key: 'inverted');
+}
+
+p {
+    margin: 0.625em 0;
+}
+
+img {
+    width: 100%;
+}

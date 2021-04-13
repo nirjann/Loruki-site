@@ -1,0 +1,62 @@
+@use '../abstracts'as *;
+
+.showcase {
+    position: relative;
+    height: 400px;
+    background-color: map-get($map: $colors, $key: 'bg-primary');
+    color: map-get($map: $colors, $key: 'primary');
+    font-size: 16px;
+   // border: 1px solid #111;
+
+    .grid {
+        grid-template-columns: 55% 45%;
+        gap: 40px;
+        overflow: visible;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        height: 100px;
+        bottom:-50px;
+        right: 0;
+        left: 0;
+        transform: skewY(-3deg);
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+.showcase-text {
+    padding: 30px;
+    h1 {
+        font-size: 30px;
+        font-weight: map-get($map: $font-weights, $key: 'regular');
+    }
+
+    p {
+        margin-block: 20px;
+    }
+    a {
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+
+.showcase-form {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+
+    h2 {
+        color: #333;
+        font-weight: map-get($map: $font-weights, $key: 'light');
+    }
+
+    .btn {
+        margin-top: 25px;
+    }
+}

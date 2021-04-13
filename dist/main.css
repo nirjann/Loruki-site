@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+}
+
+a {
+  color: #333;
+}
+
+p {
+  margin: 0.625em 0;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 2em;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  height: 100%;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  height: 70px;
+  background-color: #047aed;
+  color: #fff;
+}
+
+.navbar a {
+  display: inline-block;
+  margin: 0 1em;
+  padding: 1em;
+  color: #fff;
+}
+.navbar a:hover {
+  border-bottom: 3px solid #fff;
+}
+
+.showcase {
+  position: relative;
+  height: 400px;
+  background-color: #047aed;
+  color: #fff;
+  font-size: 16px;
+}
+.showcase .grid {
+  grid-template-columns: 55% 45%;
+  gap: 40px;
+  overflow: visible;
+}
+.showcase::before, .showcase::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -50px;
+  right: 0;
+  left: 0;
+  transform: skewY(-3deg);
+  background-color: white;
+}
+
+.showcase-text {
+  padding: 30px;
+}
+.showcase-text h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.showcase-text p {
+  margin-block: 20px;
+}
+.showcase-text a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+}
+.showcase-form h2 {
+  color: #333;
+  font-weight: 300;
+}
+.showcase-form .btn {
+  margin-top: 25px;
+}
+
+.stats {
+  margin-block: 10em;
+  text-align: center;
+}
+.stats p {
+  font-size: 1.5rem;
+}
+.stats h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.stats h3 {
+  font-weight: 300;
+  color: #2346aa;
+  font-size: 1.2rem;
+  margin-top: 0.3em;
+}
+
+.stat-icon {
+  margin: 0.6em 0 0.3em 0;
+}
+
+.grid--cli {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.cli-img {
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+}
+
+.features {
+  background-color: #047aed;
+  padding-block: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+.features .btn {
+  margin-top: 20px;
+}
+
+.feature-text {
+  color: #fff;
+  margin-right: 20px;
+}
+.feature-text h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.feature-text p {
+  font-size: 1.5rem;
+}
+
+.grid--feature {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.language {
+  margin-block: 40px;
+}
+.language h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  margin-block: 20px;
+}
+.language .card {
+  text-align: center;
+  margin: 10px 18px;
+}
+.language .card h4 {
+  margin-block: 10px;
+}
+
+footer {
+  background-color: #002240;
+  padding: 60px;
+}
+
+.copyright {
+  color: #fff;
+}
+.copyright h2 {
+  font-size: 2.5rem;
+}
+
+.nav-footer li {
+  margin-block: 10px;
+}
+.nav-footer a {
+  color: #fff;
+}
+
+.social-bar a {
+  margin-inline: 20px;
+  color: #fff;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.2s ease-in;
+}
+
+.card--anim:hover {
+  transform: translateY(-15px);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: #047aed;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  font-size: 16px;
+}
+
+.btn-outline {
+  border: 1px solid #fff;
+}
+
+.btn-secondary {
+  background-color: #002240;
+}
+
+input[type=text],
+input[type=email] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  margin: 20px 0;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+input[type=text]:focus,
+input[type=email]:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=main.css.map */

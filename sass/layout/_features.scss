@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+.features {
+    background-color: map-get($map: $colors, $key: 'bg-primary');
+    padding-block: 20px;
+    text-align: center;
+    margin-top: 30px;
+   
+
+    .btn {
+        margin-top: 20px;
+    }
+}
+
+.feature-text {
+    color: #fff;
+    margin-right: 20px;
+    h1 {
+        font-size: 3.0rem;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+.grid--feature {
+    grid-template-columns: repeat(2, 1fr);
+}

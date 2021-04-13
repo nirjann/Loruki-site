@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+// Universal font family
+$font-families: ('primary': 'Lato');
+
+// weights
+$font-weights: (
+    'light': 300,
+    'regular': 400,
+);
+
+// font mixins
+@mixin set-font($family, $weight) {
+    font-family: map-get($map: $font-families, $key: $family);
+    font-weight: map-get($map: $font-weights, $key: $weight);
+}

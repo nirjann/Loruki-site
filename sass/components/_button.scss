@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: map-get($map: $colors, $key: 'bg-primary');
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    &:hover {
+        transform: scale(0.98);
+    }
+}
+
+.btn-primary {
+    font-size: 16px;
+    
+}
+
+.btn-outline {
+    border: 1px solid #fff;
+}
+
+.btn-secondary {
+    background-color: map-get($map: $colors, $key: 'secondary');
+}
